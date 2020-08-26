@@ -1,29 +1,58 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <title>Become a BBQ master!</title>
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900&display=swap" rel="stylesheet">
-        <link href="css/styles.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="intro">
-            <h1>Learn how to make <strong>the best BBQ ribs</strong> in town</h1>
-            <p>Join us for this live webinar</p>
-            <p class="top-text">Mouthwateringly delicious</p>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="splash-image-section">
+        <div class="splash-image-background-pic"></div>
+        <div class="splash-image-top-section">
+          <div class="top-section-color-bar">
+            <h4 class="splash-image-top-section-text">
+              Mouthwateringly delicious
+            </h4>
+          </div>
         </div>
-        
-        <div class="main-content">
-            <h2>Become a BBQ master! </h2>
-            <p>Register Today</p>
-            <p>BBQ isn't just standing in front of your grill with it on full blast and hoping for the best. It's an art! One way to speed up the process is to learn from the best. You can do just that by signing up for this free webinar!</p>
-            
-            <form class="email-collector" action="#" method="POST">
-                <input type="text" required placeholder="first name">
-                <input type="email" required  placeholder="email">
-                <button class="btn btn-primary" type="submit">Register</button>
-            </form>
-            
-            <p class="fine-print">We'll never share your information without your permission</p>
+        <div class="splash-text-container">
+          <div class="splash-image-middle-section">
+              <div class="splash-image-middle-section-main-text">
+                <h1>Learn how to make</h1>
+                <h1><strong>the best BBQ ribs</strong></h1>
+                <h1>in town</h1>
+              </div>
+          </div>
+          <div class="splash-image-bottom-section">
+            <h3 class="splash-image-middle-section-cta">
+                Join us for this live webinar
+              </h3>
+          </div>
         </div>
-    </body>
+      </section>
+      <section class="form-section">
+        <div class="form-section-text-container">
+          <h2 class="form-section-title">Become a BBQ master!</h2>
+          <h3 class="form-section-subtitle">Register today</h3>
+          <p class="form-section-paragraph">
+            BBQ isn't just standing in front of your grill with it on full blast and hoping for the best. It's an art! One way to speed up the process is to learn from the best. You can do just that by signing up for this free webinar!
+          </p>
+          <form class="form-section-form" action="#" method="POST">
+            <input type="text" name="first" placeholder="first name" class="form-section-input" />
+            <input type="text" name="last" placeholder="last name" class="form-section-input" />
+            <button type="submit" href="#" class="form-section-submit">Register</button>
+          </form>
+          <h5 class="form-section-smallprints">
+            We'll never share your information
+          </h5>
+          <h5 class="form-section-smallprints">
+            without your permission!
+          </h5>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
