@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0
+}
+
+h1 {
+    color: #FFF;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
+h2 {
+    font-family: "Lato";
+    font-weight: 900;
+    font-size: 2rem
+}
+
+h3 {
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-weight: 700;
+    color: #FFA31F;
+    letter-spacing: 1px;
+}
+
+h4 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+    background: -webkit-linear-gradient(280deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h5 {
+    color: grey;
+    font-size: 0.75rem;
+    opacity: 80%;
+}
+
+p {
+    font-family: "Lato";
+    font-weight: 300;
+    color: grey;
+    font-size: 1.25rem;
+}
+
+.container {
+    display: flex;
+}
+
+.splash-image-section {
+    width: 55%;
+    position: relative;
+    height: 100vh;
+}
+
+.splash-image-background-pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/bbq.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    filter: blur(2.5px) brightness(0.45);
+    clip: rect(0 100% 100% 0);
+    clip-path: inset(0);
+    z-index: -1;
+    transition: filter 500ms
+}
+
+.splash-image-section:hover .splash-image-background-pic {
+    filter: blur(2px) brightness(0.55);
+}
+
+.splash-image-top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-section-color-bar {
+    background: linear-gradient(280deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+    height: 8px;
+}
+
+.splash-image-top-section-text {
+    padding-top: 0.85rem;
+}
+
+.splash-image-middle-section {
+    text-align: center;
+    padding: 0 3em;
+}
+
+.splash-image-middle-section-cta {
+    margin-top: 1rem
+}
+
+.splash-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.form-section {
+    width: 45%;
+    height: 100vh;
+}
+
+.form-section-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.form-section-title {
+    padding-bottom: 0.5rem;
+}
+
+.form-section-subtitle {
+    padding-bottom: 1.5rem;
+}
+
+.form-section-paragraph {
+    width: 70%;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.form-section-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section-input {
+    margin-bottom: 0.75rem;
+    padding: 0.60rem 3.5rem;
+    border-radius: 6px;
+    border: 1px solid grey;
+    text-align: center;
+    color: grey;
+    opacity: 90%;
+}
+
+.form-section-submit {
+    display: inline-block;
+    padding: 0.60rem 3.5rem;
+    border-radius: 6px;
+    background: linear-gradient(280deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+    border: 0;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 0.65rem;
+    transition: transform 500ms;
+}
+
+.form-section-submit:hover,
+.form-section-submit:focus {
+    cursor: pointer;
+    background: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+    transform: scale(1.05);
+}
+
+@media (max-width: 1105px) {
+    .container {
+        flex-direction: column;
+    }
+    .splash-image-section {
+        width: 100%;
+        position: relative;
+        height: 45vh;
+        margin-bottom: 2.5em;
+    }
+    .splash-image-background-pic {
+        height: 100%;
+    }
+    .form-section {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 2rem;
+    }
+    .form-section-text-container {
+        justify-content: flex-start;
+    }
+    h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .splash-image-middle-section-cta {
+        margin-top: 0;
+    }
+    .splash-image-middle-section-main-text {
+        margin: 10vh 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .form-section-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .form-section-paragraph {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+}
